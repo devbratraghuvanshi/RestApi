@@ -13,8 +13,13 @@ var http = require('http');
 // }).listen(8080);
 
 var handleequest = function(req, res) {
-  console.log("url is "+req.url);
-  res.write("hello from node js");
+  if (req.url ==="/") {
+    res.write("root Dir");
+  }else if (req.url ==="/root1") {
+     res.write("root1 Dir");
+  } else {
+    res.write("root2 Dir");
+  }
   res.end();
 }
 
