@@ -10,7 +10,7 @@ app.listen(3000,function(){
 
 
 app.get("/",function(req,res) {
-    res.send("hello from Express");
+    res.send("hello from Express of Node +gulp");
     res.end();
 })
 
